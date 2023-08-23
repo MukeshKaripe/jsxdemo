@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Heading from './component/header';
 import ListElements from './component/listelements';
-import ArrowCal from './component/calculator';
+import {add,sub,div} from './component/calculator';
 
 function App() {
   const img1="htttp:/google.com/photos"
@@ -67,7 +67,7 @@ colorApply.color = 'blue' ;
     <div className="App">
 
     <Heading/>
-    <ArrowCal/>
+    {/* <ArrowCal/> */}
 
       {/* <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
@@ -122,6 +122,11 @@ colorApply.color = 'blue' ;
       </nav>
     <ListElements/>
       <h1>Helloo sir, {wishesMethod()} </h1>
+      <p>
+        subtraction of two number {sub(20,40)}
+        sum of two numbers {add(20,200)}
+      </p>
+      <div>div of two numbers with limit four decimals {div(100,5)} </div>
     </div>
   );
 }

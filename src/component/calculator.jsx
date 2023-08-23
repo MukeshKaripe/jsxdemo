@@ -10,8 +10,14 @@ function sub(a,b) {
     
 }
 
+function div(a,b) {
+    return (a / b).toFixed(4) ;
+    
+}
 
 
 
 
-export default {add,sub};
+
+
+export {add,sub,div};
