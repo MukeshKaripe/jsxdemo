@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+.background-div{
+  min-height: 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ccc;
+}
